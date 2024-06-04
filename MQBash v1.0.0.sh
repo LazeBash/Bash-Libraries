@@ -30,6 +30,19 @@
 
 
 #library
+
+#mysql connection information here
+function glb_fnc_mysql_request()
+{
+    local loc_mysql_database="${1}"
+    local loc_mysql_hostname="localhost"
+    local loc_mysql_username="root"
+    local loc_mysql_userpwd="<<my password here>>"
+
+    mysql -h"${loc_mysql_hostname}" -u"${loc_mysql_username}" -p"${loc_mysql_userpwd}" "${loc_mysql_database}"
+}
+
+#request query here
 function glb_fnc_MQBash()
 {
     local loc_data_type="${1}"
