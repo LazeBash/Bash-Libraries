@@ -1,5 +1,3 @@
-#!/usr/bin/bash
-
 #This Library is designed to make using MySQL queries more convenient in a Bash Script environment.
 #How long will we continue using echo for SQL queries...?
 
